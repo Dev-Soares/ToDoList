@@ -13,6 +13,7 @@ const tasksController = {
 
   createTask: async (req, res) => {
     try {
+      
       const task = req.body; // Recebe o Corpo da Req enviado pelo frontend, com os dados necessarios para criar a task
 
       const newTask = await tasksService.createTask(task); // chama a funcao do service de criar a task
